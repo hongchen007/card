@@ -1,0 +1,58 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-浏览用户团队</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+
+<form method="get" action="{:U('Team/index')}">
+	<div style="margin-top:20px">
+		<input type="text" value="{$Think.get.name}" name="name" placeholder="搜索用户名" >
+		<select name="len">
+			<option value="4">--请选择等级--</option>
+			<option value="1">--一级会员--</option>
+			<option value="2">--二级会员--</option>
+			<option value="3">--三级会员--</option>
+		</select>
+		<input type="submit" value="查询" >
+	</div>
+</form>
+   
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="20">用户名: {$name}</td>
+		</tr>
+		<tr class="tableTop">
+			<th class="th">用户ID</th>
+			<th class="th">用户名称</th>
+			<th class="th">用户金额</th>		
+			<th class="th">关注时间</th>		
+		</tr>
+		
+		<foreach name="list" item="val">
+		<tr>
+			<td class="th">{$val['id']}</td>
+			<td class="th">{$val['name']}</td>
+			<td class="th">{$val['money']}</td>
+			<td class="th">{$val['addtime']}</td>
+		</tr>
+		</foreach>
+		<tr class="content">
+                <td colspan="3" bgcolor="#FFFFFF"><div class="pages">
+                        {$Page}
+                </div></td>  
+        </tr>
+	</table>
+
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

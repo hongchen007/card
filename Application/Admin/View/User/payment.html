@@ -1,0 +1,54 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-付款记录</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+  
+<form method="get" action="{:U('User/payment')}">
+	<div style="margin-top:20px">
+		<input type="text" value="{$Think.get.name}" name="name" placeholder="搜索购买者" >
+		<input type="submit" value="查询">
+	</div>
+</form>
+
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="20">付款记录列表</td>
+		</tr>
+		<tr class="tableTop">
+			<th>购买者</th>
+			<th>商品名称</th>
+			<th>商品价格</th>
+			<th>购买时间</th>
+		</tr>
+		
+		<foreach name="info" item="val">
+		<tr>
+		
+			<td>{$val['weixin_name']}</td>
+			<td>{$val['goods_name']}</td>
+			<td>{$val['money']}</td>
+			<td>{$val['addtime']}</td>
+		</tr>
+		</foreach>
+		<tr class="content">
+                <!--<td colspan="3" bgcolor="#FFFFFF">&nbsp;{$page}</td>-->
+                <td colspan="3" bgcolor="#FFFFFF"><div class="pages">
+                        {$Page}
+                </div></td>  
+            </tr>
+	</table>
+
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

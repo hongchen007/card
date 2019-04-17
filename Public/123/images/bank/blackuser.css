@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+#main{
+   padding-top:20px;
+    overflow: hidden;
+}
+.footer img{
+    margin:30px 15px 30px 15px;
+    border-bottom:1px solid #ddd;
+}
+.footer a{
+    display:inline-block;
+    width:80%;
+    height:50px;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:10px;
+    background:#5BE3CC;
+    text-align:center;
+    line-height:50px;
+    position:relative;
+}
+.footer i{
+    border:15px solid transparent;
+    border-top-color:#337AB7;
+    border-right-color:#337AB7;
+    /*相对定位，搞定位置微调*/
+    position:absolute;
+    top:19px;
+    left:-30px;
+}
+#virtuals{
+    width:100%;
+    min-height:200px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left:0;
+}
+#virtuals li{
+    flex-wrap: wrap;
+    width:25%;
+    min-height:87px;
+    text-align: center;
+}
+#virtuals li img{
+    width:80%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/my_purse.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+    <title>我的钱包</title>
+</head>
+<body>
+<div class="banner">
+    <img src="images/head_03.jpg" class="pic">
+    <h3>名称:白墨</h3>
+    <span class="Id">会员ID:54940</span>
+    <ul>
+        <li>0.00元<br>账户余额</li>
+        <li>累计收益<br>0.00元</li>
+        <li>我的资金<br>0.00元</li>
+        <li>提现资金<br>0.00元</li>
+        <li>本月收益<br>0.00元</li>
+        <li><a href="javascript:;"><img src="images/li_03.jpg"><br>提现</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
+<script>
+    var _width = document.documentElement.clientWidth || document.body.clientWidth;
+    document.documentElement.style.fontSize = _width /627* 100 + "px";
+    window.onresize = function () {
+        var _width = document.documentElement.clientWidth || document.body.clientWidth;
+        document.documentElement.style.fontSize = _width /627* 100 + "px";
+    }
+
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!--3、x-ua-compatible-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <!--6、引入bootstrap.css-->
+    <link rel="stylesheet" href="css/mall.css"/>
+    <title>金融商城</title>
+</head>
+<body>
+<div>
+
+    <div class="contain">
+        <div class="detail">
+            <a href="detail.html">
+                <div class="content">
+                    <img src="images/shop.jpg" alt="">
+                    <div>
+                        <p>I-PAY境外机（车辆违章处理苹果、安卓已上线）</p>
+                        <span style="color: #e4393c;">会员价:￥299</span>
+                        <p>原价:￥399</p>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html">
+                <div class="content">
+                    <img src="images/shop.jpg" alt="">
+                    <div>
+                        <p>I-PAY境外机（车辆违章处理苹果、安卓已上线）</p>
+                        <span style="color: #e4393c;">会员价:￥299</span>
+                        <p>原价:￥399</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <ul class="page">
+            <li>上一页</li>
+            <li>1/1</li>
+            <li>下一页</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        Copyright @版本所有
+    </div>
+    <ul class="footer">
+        <li><a href=""><img src="images/li_28.jpg"><br>商城主页</a></li>
+        <li><a href=""><img src="images/li_26.jpg"><br>商品分类</a></li>
+        <li><a href="updata.html"><img src="images/nav_03.jpg" style="border-radius:5px"><br>我的订单</a></li>
+        <li><a href="me.html"><img src="images/li2_03.jpg"><br>会员中心</a></li>
+    </ul>
+</div>
+
+<script src="js/jquery-3.1.0.js"></script>
+<script>
+    $(".page li:eq(5)").addClass("active");
+    $(".contain").on("mousedown", "li", function () {
+        $(this).addClass("active").css("color","#E3E3E3").siblings().removeClass("active").css("color","#000");
+    });
+</script>
+</body>
+</html>

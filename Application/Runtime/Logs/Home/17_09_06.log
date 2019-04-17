@@ -1,0 +1,1119 @@
+[ 2017-09-06T08:39:16+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=6856be691cf4dbf1354ce8685e1a90cb7e9abb4a&timestamp=1504658193&nonce=1467995995&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=1c1ae58aca068954577a306b53d32ca188402618
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T08:39:17+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=0819smws1iDV4p0WCTts17Fiws19smwg&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.011000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T08:39:19+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.006000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T08:39:25+08:00 ] 127.0.0.1 /card/index.php/Home/User/mypurse/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.015000s ]
+SQL: SELECT `weixin_name`,`weixin_headimgurl`,`id` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T08:39:35+08:00 ] 127.0.0.1 /card/index.php/Home/User/mymsg/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.013000s ]
+SQL: SELECT `weixin_name`,`weixin_headimgurl`,`random` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: random C:\aaa\WWW\card\Application\Runtime\Cache\Home\32d49b6bc212684ce47ab6f12037483e.php 第 22 行.
+NOTIC: [8] Undefined variable: random C:\aaa\WWW\card\Application\Runtime\Cache\Home\32d49b6bc212684ce47ab6f12037483e.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T08:44:33+08:00 ] 127.0.0.1 /card/index.php/Home/User/mypurse/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.012000s ]
+SQL: SELECT `weixin_name`,`weixin_headimgurl`,`id` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T09:53:18+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=fbf60ad4ee6f06a0024b0f5a66c821b39938fb12&timestamp=1504662635&nonce=659674527&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=2226c94a538c676466dbeb111aaf1c623294c886
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T09:53:21+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=0112nTz41kevsO14A5A41fSxz412nTzO&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.015000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T09:53:22+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.004000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T22:57:21+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T22:57:45+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T22:57:59+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: nonce C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: timestamp C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8] Undefined index: signature C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: openid C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Trying to get property of non-object C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Trying to get property of non-object C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 129 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504716879) [ RunTime:0.001000s ]
+
+[ 2017-09-06T22:58:38+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=36e826fc1c6e8d08133c4b0e146ca6080ccca304&timestamp=1504709755&nonce=1880925059&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=fc38178d68541a177575094a2a42dc783f3b0d7d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504716918) [ RunTime:0.000000s ]
+
+[ 2017-09-06T22:58:40+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=0712UDWb0mcvtw1NWkWb05cCWb02UDW9&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T22:58:41+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.005000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T22:59:05+08:00 ] 127.0.0.1 /card/index.php/Home/User/mymsg/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.004000s ]
+SQL: SELECT `weixin_name`,`weixin_headimgurl`,`random` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: random C:\aaa\WWW\card\Application\Runtime\Cache\Home\32d49b6bc212684ce47ab6f12037483e.php 第 22 行.
+NOTIC: [8] Undefined variable: random C:\aaa\WWW\card\Application\Runtime\Cache\Home\32d49b6bc212684ce47ab6f12037483e.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T22:59:08+08:00 ] 127.0.0.1 /card/index.php/Home/User/person/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`weixin_name`,`pid`,`weixin_addtime`,`weixin_headimgurl` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `weixin_name` FROM `weixin_user` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo C:\aaa\WWW\card\Application\Runtime\Cache\Home\f8572818f644e2dae72135537b20a8a3.php 第 23 行.
+NOTIC: [8] Undefined variable: userinfo C:\aaa\WWW\card\Application\Runtime\Cache\Home\f8572818f644e2dae72135537b20a8a3.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T22:59:18+08:00 ] 127.0.0.1 /card/index.php/Home/User/person/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SELECT `id`,`weixin_name`,`pid`,`weixin_addtime`,`weixin_headimgurl` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `weixin_name` FROM `weixin_user` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userinfo C:\aaa\WWW\card\Application\Runtime\Cache\Home\f8572818f644e2dae72135537b20a8a3.php 第 23 行.
+NOTIC: [8] Undefined variable: userinfo C:\aaa\WWW\card\Application\Runtime\Cache\Home\f8572818f644e2dae72135537b20a8a3.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T22:59:28+08:00 ] 127.0.0.1 /card/index.php/Home/User/mytream/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: id C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 103 行.
+NOTIC: [8] Undefined index: id C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 104 行.
+SQL: SELECT `weixin_openid` FROM `user` WHERE `id` = null LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `weixin_name` FROM `weixin_user` WHERE `openid` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`pid`,`weixin_openid` FROM `user`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: htreeinfo C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T22:59:54+08:00 ] 127.0.0.1 /card/index.php/Home/User/mytream/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: id C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 103 行.
+NOTIC: [8] Undefined index: id C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 104 行.
+SQL: SELECT `weixin_openid` FROM `user` WHERE `id` = null LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `weixin_name` FROM `weixin_user` WHERE `openid` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`pid`,`weixin_openid` FROM `user`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: htreeinfo C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T23:09:29+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=e46aa583a86807ae4f0dcf9294474732d8013677&timestamp=1504710405&nonce=1124401927&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=07b9f95cb1d12017987d6e6bcfbf230979ac3863
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504717569) [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:09:29+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=021SJh3221e8701wWM322h0k322SJh3k&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.012000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:09:30+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-09-06T23:10:34+08:00 ] 127.0.0.1 /card/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: nonce C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: timestamp C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8] Undefined index: signature C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: openid C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Trying to get property of non-object C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Trying to get property of non-object C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 129 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504717634) [ RunTime:0.002000s ]
+
+[ 2017-09-06T23:10:54+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: nonce C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: timestamp C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 10 行.
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8] Undefined index: signature C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: openid C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 36 行.
+NOTIC: [8] Trying to get property of non-object C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Trying to get property of non-object C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 129 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504717654) [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:17:25+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=a7011c0c69f7a50ee7a008de31ae04984518c664&timestamp=1504710881&nonce=1125233416&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=4652cce755d99a8b12d00a6937dd72f530a45818
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504718045) [ RunTime:0.000000s ]
+
+[ 2017-09-06T23:17:25+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=001XyUi22cJlWZ0PUEg224kDi22XyUil&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:17:26+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:17:37+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.007000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info C:\aaa\WWW\card\Application\Runtime\Cache\Home\6830cbac89ff06451c77cd8769d6d4ca.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:21:46+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=081TyjSN1CiSe513MVQN1PUgSN1TyjSb&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.012000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:21:47+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:21:51+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=c9227833ea0f7532cd56705468647985b72412bc&timestamp=1504711147&nonce=656574083&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=57cdd1a482e8dade5cedf007bb3ee7045d2b268b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504718311) [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:21:51+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=071XOMus10wRZo0bTIxs1KNKus1XOMu2&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:21:52+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.002000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:22:00+08:00 ] 127.0.0.1 /card/index.php/Home/User/mypurse/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.012000s ]
+SQL: SELECT `weixin_name`,`weixin_headimgurl`,`id` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:22:12+08:00 ] 127.0.0.1 /card/index.php/Home/User/push/openid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `article_genera` [ RunTime:0.016000s ]
+SQL: SELECT * FROM `article_genera` LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:22:20+08:00 ] 127.0.0.1 /card/index.php/Home/User/mymsg/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.013000s ]
+SQL: SELECT `weixin_name`,`weixin_headimgurl`,`random` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: random C:\aaa\WWW\card\Application\Runtime\Cache\Home\32d49b6bc212684ce47ab6f12037483e.php 第 22 行.
+NOTIC: [8] Undefined variable: random C:\aaa\WWW\card\Application\Runtime\Cache\Home\32d49b6bc212684ce47ab6f12037483e.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:22:57+08:00 ] 127.0.0.1 /card/index.php/Home/User/tixian/id/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:tixian
+
+[ 2017-09-06T23:24:13+08:00 ] 127.0.0.1 /card/index.php/Home/User/cooparate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:24:22+08:00 ] 127.0.0.1 /card/index.php/Home/User/cooparate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T23:27:27+08:00 ] 127.0.0.1 /card/index.php/Home/User/tixian/id/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:tixian
+
+[ 2017-09-06T23:29:24+08:00 ] 127.0.0.1 /card/index.php/Home/User/tixian/id/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.008000s ]
+
+[ 2017-09-06T23:35:49+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=071igfPM0QpHd623O2SM0GU2PM0igfPs&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.016000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:35:50+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:35:52+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=d6889b4ecc4bf9ff31e466218008d0dfd966a622&timestamp=1504711988&nonce=298118437&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=554ba28c586a06164a48bbf221f490426f1b9867
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504719152) [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:35:52+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=08178FRu0HaSDd1Qx8Ou09oPRu078FRY&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:35:53+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T23:36:00+08:00 ] 127.0.0.1 /card/index.php/Home/User/hero
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `case` [ RunTime:0.015000s ]
+SQL: SELECT * FROM `case` LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:36:09+08:00 ] 127.0.0.1 /card/index.php/Home/User/hero
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `case` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `case` LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:45:56+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=0718yEV1108fgN1G3PV111OJV118yEV6&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:45:57+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-06T23:46:02+08:00 ] 127.0.0.1 /card/index.php/Home/Index/index?signature=05e6cf556fc9f61c2a92d63b3830e760d4b82c38&timestamp=1504712598&nonce=963541583&openid=opZti1ftrwWuIq1dE_QDBG_fqjoI&encrypt_type=aes&msg_signature=e8b7d1b2d1d4b1518ee37aa8d2f8c2aa03771e97
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: echostr C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `access_tokenvalue` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `access_tokenvalue` ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] curl_error(): 34 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 216 行.
+NOTIC: [8] Array to string conversion C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 332 行.
+NOTIC: [8] Undefined index: access_token C:\aaa\WWW\card\Application\Home\Controller\IndexController.class.php 第 333 行.
+SQL: INSERT INTO `access_tokenvalue` (`access_token`,`expire_time`) VALUES (null,1504719762) [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:46:02+08:00 ] 127.0.0.1 /card/index.php/Home/Card/huiyuanzhongxin?code=0110LU5x1wa2Rb04pw8x16la6x10LU59&state=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.007000s ]
+NOTIC: [2] curl_errno(): 33 is not a valid cURL handle resource C:\aaa\WWW\card\Application\Home\Controller\CardController.class.php 第 19 行.
+SQL: SELECT `grade` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:46:03+08:00 ] 127.0.0.1 /card/index.php/Home/User/index/openid/opZti1ftrwWuIq1dE_QDBG_fqjoI.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 32 行.
+SQL: SELECT `money` FROM `recode` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' AND `grade` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 38 行.
+SQL: SELECT `weixin_headimgurl`,`weixin_name`,`openid`,`weixin_addtime`,`id`,`money` FROM `weixin_user` WHERE `openid` = 'opZti1ftrwWuIq1dE_QDBG_fqjoI' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: wait C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: tixian C:\aaa\WWW\card\Application\Home\Controller\UserController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-06T23:46:07+08:00 ] 127.0.0.1 /card/index.php/Home/User/tixian/id/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.008000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-06T23:48:14+08:00 ] 127.0.0.1 /card/index.php/Home/User/tixian/id/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.013000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-06T23:48:57+08:00 ] 127.0.0.1 /card/index.php/Home/User/tixian/id/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\aaa\WWW\card\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `recode` [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

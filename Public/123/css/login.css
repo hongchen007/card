@@ -1,0 +1,141 @@
+.login{
+ text-align:center;
+}
+.login h3{
+    font-size: 0.4rem;
+    text-align: center;
+    height: 0.56rem;
+    line-height: 0.56rem;
+}
+.login h3 span{
+    color:#EF5B4F;
+	font-family:fangzheng;
+
+
+}
+@font-face {
+	font-family:fangzheng Arial;
+	
+	src:url('../fonts/fangzheng.tff');
+
+}
+.login form{
+    font-size: 0.16rem;
+    color: red;
+    margin-top: 0.44rem;
+}
+.login form .names{
+    height:0.64rem;
+
+    width: 96%;
+    margin:3% 0 0 3%;
+}
+.login form .pas{
+    width: 96%;
+    margin:0.19rem 3% 0 3%;
+    height:0.64rem;
+
+}
+.login form .names span,.login form .pas span{
+     display: block;
+     float: left;
+     width:0.6rem;
+     height: 0.62rem;
+     background-color: #FBD2D0;
+     border:1px solid #F3A5A0;
+    border-right: none;
+}
+.login form .names span img{
+    float: left;
+    width:0.26rem;
+    height:0.27rem;
+    margin: 25%;
+}
+.login form .pas img{
+    float: left;
+    width:0.26rem;
+    height:0.27rem;
+    margin: 25%;
+ }
+.login form .names input,.login form .pas input{
+     float: left;
+     width:5.27rem;
+     height:0.62rem;
+     border:none;
+     border:1px solid #F3A5A0;
+     padding-left: 0.1rem;
+     color:#999;
+	 outline:none;
+}
+
+.login .rem input{
+    display: block;
+    float: left;
+}
+.login .rem span{
+    font-size:0.18rem;
+}
+.login .rem .rem_left{
+    float:left;
+    margin-left:0.3rem;
+    margin-top: 0.2rem;
+}
+.login .rem .rem_left input{
+     width:0.2rem;
+    height:0.2rem;
+}
+.login .rem .rem_left span{
+    color:#F25955
+}
+.login .rem .rem_right{
+    float:right;
+    margin-right:0.3rem;
+    margin-top: 0.2rem;
+}
+.login .rem .rem_right a{
+    text-decoration: none;
+    color:#F25955;
+}
+.login .btn{
+    height:0.45rem;
+    width:3.5rem;
+    text-align: center;
+    background-color: #EE5A50;
+    color:#fff;
+    border:none;
+    font-size: 0.18rem;
+
+}
+.login_reg span{
+    font-size: 0.18rem;
+    display: block;
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 0.24rem;
+}
+.login_reg span a{
+    text-decoration: none;
+    color: #fff ;
+    font-size: 0.18rem;
+}
+.foot{
+   text-align: center;
+    margin-top: 1rem;
+}
+.foot h6{
+    font-size: 0.18rem;
+	color:#626365
+
+}
+.foot h6 span{
+    font-size: 0.26rem;
+    color:#ED5A50;
+    display: inline-block;
+
+}
+.foot p{
+    font-size: 0.18rem;
+    color:#626365;
+    margin-top: 0.2rem;
+    padding-bottom: 1rem;
+}

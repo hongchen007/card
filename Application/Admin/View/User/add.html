@@ -1,0 +1,64 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-浏览用户</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+    
+<body>
+	<form action="{:U('User/insert')}" method="post" enctype="multipart/form-data" >
+		<table class="table">
+			<tr >
+				<td class="th" colspan="2">添加后台用户</td>
+			</tr>
+			<tr>
+				<td>用户名</td>
+				<td><input type="text" name="name"/></td>
+			</tr>
+			<tr>
+				<td>微信名</td>
+				<td><input type="text" name="wechat_name"/></td>
+			</tr>
+			<tr>
+				<td>上级ID</td>
+				<td><input type="text" name="pid"/></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td>默认密码：<span style="color:red;">123456</span></td>
+			</tr>
+			<tr>
+				<td>地址：</td>
+				<td><input type="text" name="address"/></td>
+			</tr>
+			<tr>
+				<td>电话：</td>
+				<td><input type="text" name="tel"/></td>
+			</tr>
+			<tr>
+				<td>金额：</td>
+				<td><input type="text" name="money"/></td>
+			</tr>
+			<tr>
+				<td>头像：</td>
+				<td><input type="file" name="head_pic"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="添加" class="input_button"/>
+					<input type="reset" class="input_button"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

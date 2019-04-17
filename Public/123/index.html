@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+    <title>订购产品</title>
+
+</head>
+<body>
+   <div id="banner"><img src="images/li.jpg"></div>
+   <div id="mid">
+       <div id="mid_top"><span class="mid_top_text"><img src="images/arrow_03.jpg"> 我的上级:创赢掌上融,我的UID:54940</span>
+       </div>
+        <ul id="mid_mid">
+           <span class="choose">请选择会员权限</span>
+               <ul class="vip">
+                   <li  id="vip1" a="0">钻石会员</li>
+                   <li  id="vip2" a="1">绿卡会员</li>
+               </ul>
+            <div class="form">
+               <input type="text"  placeholder="收货姓名">
+               <input type="text"  placeholder="微信号码">
+               <input type="text"  placeholder="手机号码">
+               <input type="text"  placeholder="收货地址">
+            </div>
+        </ul>
+        </div>
+   <div class="footer">
+       <div class="wrap">
+          <p class="money">价格:<span class="price">￥2290</span></p>
+          <a href="javascript:;" class="buy">立即购买</a>
+       </div>
+       <div class="wrap" style="display:none">
+           <p class="money">价格:<span class="price">￥1190</span></p>
+           <a href="javascript:;" class="buy">立即购买</a>
+       </div>
+   </div>
+</body>
+</html>
+<script>
+    $(function(){
+        var _width = document.documentElement.clientWidth || document.body.clientWidth;
+            document.documentElement.style.fontSize = _width / 680 * 100 + "px";
+        window.onresize = function () {
+            var _width = document.documentElement.clientWidth || document.body.clientWidth;
+            document.documentElement.style.fontSize = _width / 680 * 100 + "px";
+        };
+
+        $("#vip2").click(function(){
+            $(this).css({"background":"#EB6D20","color":"#fff"}).siblings().css({"background":"#fff","color":"#EB6D20"})
+        });
+        $("#vip1").click(function(){
+            $(this).css({"background":"#EB6D20","color":"#fff"}).siblings().css({"background":"#fff","color":"#EB6D20"})
+        })
+
+        $(".vip").addClass("active");
+        $(".vip").on("click", "li", function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var i=$(this).attr("a");
+            console.log(i);
+            $(".footer .wrap").eq(i).css("display","block").siblings().css("display","none");
+        });
+        })
+
+</script>

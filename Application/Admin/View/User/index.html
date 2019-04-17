@@ -1,0 +1,97 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-浏览用户</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+  
+<form method="get" action="{:U('User/index')}">
+	<div style="margin-top:20px">
+		<input type="text" value="{$Think.get.id}" name="id" placeholder="搜索用户ID" >
+		<input type="text" value="{$Think.get.name}" name="name" placeholder="搜索用户名" >
+		状态：
+			<select class="form-control m-bot15" name="state" >
+                  <option value="">--请选择--</option>
+                  <option value="1">正常用户</option>
+                  <option value="2">禁用用户</option>
+            </select>
+		<input type="submit" value="查询">
+	</div>
+
+</form>
+
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="20">用户列表</td>
+		</tr>
+		<tr class="tableTop">
+			<th class="tdLittle1">ID</th>
+			<th>上级代理ID</th>
+			<th>用户名</th>
+			<th>用户微信名</th>
+			<th>头像</th>
+			<th>电话</th>
+			<th>地址</th>		
+			<th>关注时间</th>
+			<th>金币</th>
+			<th>等级</th>
+			<th>帐号状态</th>
+			<th>操作</th>
+		</tr>
+		
+		<foreach name="info" item="val">
+		<tr>
+		
+			<td>{$val['id']}</td>
+			<td>{$val['pid']}</td>
+			<td>{$val['name']}</td>
+			<td>{$val['weixin_name']}</td>
+			<td>
+				<if condition="empty($val['weixin_headimgurl']) eq true">用户没有上传头像
+				<else /><img src="{$val['weixin_headimgurl']}" style="height:100px;">
+				</if>
+			</td>
+			<td>{$val['tel']}</td>
+			<td>{$val['address']}</td>
+			<td>{$val['weixin_addtime']|substr=0,10}</td>
+			<td>{$val['money']}</td>
+			<td>
+				<if condition="$val['grade'] == 1"><span style="color:blue;">银卡会员</span></if>
+				<if condition="$val['grade'] == 2"><span style="color:red">金卡会员</span></if>
+			</td>
+			<td>
+				<if condition="$val['state'] == 1"><span style="color:blue;">正常</span></if>
+				<if condition="$val['state'] == 2"><span style="color:red">冻结</span></if>
+			</td>
+			<td>
+				<if condition="$val['state'] ==1">
+		            <a href="__MODULE__/User/edit/id/{$val.id}">修改</a>|
+		            <a href="__MODULE__/User/stop/id/{$val.id}">冻结</a>
+		        <else />
+					<a href="__MODULE__/User/edit/id/{$val.id}">修改</a> |
+		            <!-- <a href="__MODULE__/User/del/id/{$val.id}">删除</a><br> -->
+		            <a href="__MODULE__/User/start/id/{$val.id}">恢复</a>
+		        </if>
+		    </td>
+		</tr>
+		</foreach>
+		<tr class="content">
+                <!--<td colspan="3" bgcolor="#FFFFFF">&nbsp;{$page}</td>-->
+                <td colspan="3" bgcolor="#FFFFFF"><div class="pages">
+                        {$page}
+                </div></td>  
+            </tr>
+	</table>
+
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-修改用户信息</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+    
+<body>
+	<form action="{:U('User/doedit')}" method="post" enctype="multipart/form-data" >
+		<table class="table">
+			<tr >
+				<td class="th" colspan="2" >修改用户信息</td>
+			</tr>
+<!-- 			<tr>
+				<td>修改用户头像：</td>
+				<td><input type="file" name="head_pic" onChange="document.getElementsByName('xgpic')[0].value=this.value" /></td>
+				<input type="hidden" name="xgpic">
+			</tr>
+			<tr>
+				<td>用户原头像：</td>
+				<td>
+					<if condition="empty($info['head_pic']) eq true">用户没有上传头像
+					<else /><img src="__PUBLIC__/Uploads/{$info['head_pic']}" style="height:100px;">
+					</if>
+				</td>
+			</tr> -->
+			<tr>
+				<td>修改用户名</td>
+				<td><input type="text" name="name" value="{$info['name']}" /></td>
+				<input class=" form-control" id="id" name="id" type="hidden" value="{$info.id}" /> 
+			</tr>
+			<tr>
+				<td>修改上级ID</td>
+				<td><input type="text" name="pid" value="{$info['pid']}" /></td>
+			</tr>
+<!-- 			<tr>
+				<td>是否重置密码为：<span style="color:red;">123456</span></td>
+				<td>
+					<span style="margin-right:10%;">是<input type="radio" name="pwd" value="2" /> </span>
+					否<input type="radio" name="pwd" value="1" checked />
+				</td>
+			</tr> -->
+			<tr>
+				<td>修改用户地址：</td>
+				<td><input type="text" name="address" value="{$info['address']}" /></td>
+			</tr>
+			<tr>
+				<td>修改电话：</td>
+				<td><input type="text" name="tel" value="{$info['tel']}" /></td>
+			</tr>
+			<tr>
+				<td>修改用户金额：</td>
+				<td><input type="text" name="money" value="{$info['money']}" /></td>
+			</tr>
+			<tr>
+				<td>修改会员等级：</td>
+				<td>
+					金卡会员<input type="radio" name="grade" value="2" <if condition="$info.grade eq 2"> checked </if> />
+					银卡会员<input type="radio" name="grade" value="1" <if condition="$info.grade eq 1"> checked </if> />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="修改" class="input_button"/>
+					<input type="reset" class="input_button"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

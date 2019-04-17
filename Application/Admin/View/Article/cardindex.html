@@ -1,0 +1,65 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-浏览信用卡知识文章</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+    
+<body>
+	<form action="{:U('article/cardinsert')}" method="post" enctype="multipart/form-data" >
+		<table class="table">
+			<tr >
+				<td class="th" colspan="2">
+					浏览信用卡知识文章
+					<if condition="empty($info) eq true"><span style="margin-left:80%;"><a href="{:U('Article/cardadd')}">添加文章</span></if>
+				</td>
+			</tr>
+			<if condition="empty($info) eq true">
+			<else />
+				<tr>
+					<td>文章内容</td>
+					<td><textarea rows="6" class="form-control" name="content">{$info['content']}</textarea></td>
+				</tr>
+				<tr>
+					<td>添加时间</td>
+					<td>{$info['addtime']}</td>
+				</tr>
+				<tr>
+					<td>状态</td>
+					<td>
+						<if condition="$info['classes'] eq 1">已启用
+						<else />已禁用
+						</if>
+					</td>
+				</tr>
+
+				<tr>
+					<td>操作</td>
+					<td>
+						<if condition="$info['classes'] == 1">
+				            <a href="__MODULE__/Article/cardedit/id/{$info.id}">修改</a>|
+				            <a href="__MODULE__/Article/cardstop/id/{$info.id}">禁用</a>
+				        <else />
+							<a href="__MODULE__/Article/cardedit/id/{$info.id}">修改</a> |
+				            <a href="__MODULE__/Article/cardstart/id/{$info.id}">启用</a>
+				        </if>
+					</td>
+				</tr>
+			</if>
+		</table>
+	</form>
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>
+
+
+
+

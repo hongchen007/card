@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+	<style>
+	@font-face {
+	  font-family: 'FontA';
+	  src: url('fonts/fangzheng.eot?v=4.3.0');
+	}
+	.login>h3{font-family:FontA;
+	
+	}
+	body{background: url(images/bj_03.png);}
+	</style>
+</head>
+<body>
+<div class="login">
+     <h3><span>钱宝</span>信用卡</h3>
+     <form>
+      <div class="names"> <span ><img src="images/sign_03.jpg"></span><input type="text" placeholder="请输入用户名/邮箱"></div>
+      <div class="pas"><span ><img src="images/sign_07.jpg"></span><input type="password" placeholder="请输入密码"></div><br>
+     </form>
+    <div class="rem">
+        <span class="rem_left">
+            <input type="checkbox">
+            <span>　记住用户名</span>
+        </span>
+        <span class="rem_right">
+             <a href="javascript:;">忘记密码</a>
+        </span>
+    </div>
+    <button class="btn">登录</button>
+     <div class="login_reg">
+        <span> <a href="logins">登录||</a>
+         <a href="register">注册</a></span>
+     </div>
+</div>
+<div class="foot">
+    <h6>服务热线: <span>400-9912-808</span></h6>
+    <p>2014年钱宝信用卡版权所有|沪ICP备402665号</p>
+
+</div>
+
+</body>
+</html>
+<script>
+    	var _width = document.documentElement.clientWidth || document.body.clientWidth;
+            document.documentElement.style.fontSize = _width / 640 * 100 + "px";
+			
+        window.onresize = function () {
+           
+            document.documentElement.style.fontSize = _width / 640 * 100 + "px";
+        }
+   
+
+</script>

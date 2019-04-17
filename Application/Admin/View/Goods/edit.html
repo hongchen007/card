@@ -1,0 +1,69 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-修改商品信息</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+    
+<body>
+	<form action="{:U('Goods/doedit')}" method="post" enctype="multipart/form-data" >
+		<table class="table">
+			<tr >
+				<td class="th" colspan="2" >修改商品信息</td>
+			</tr>
+			<tr>
+				<td>修改商品图片：</td>
+				<td><input type="file" name="pic" onChange="document.getElementsByName('xgpic')[0].value=this.value" /></td>
+				<input type="hidden" name="xgpic">
+				<input type="hidden" name="id" value="{$info['id']}">
+			</tr>
+			<tr>
+				<td>商品原图片：</td>
+				<td><img src="__PUBLIC__/Uploads/{$info['pic']}" style="height:100px;"></td>
+			</tr>
+			<tr>
+				<td>修改商品名称</td>
+				<td><input type="text" name="name" value="{$info['name']}" /></td>
+				<input class=" form-control" id="id" name="id" type="hidden" value="{$info.id}" /> 
+			</tr>
+<!-- 			<tr>
+				<td>修改商品商户微信号</td>
+				<td><input type="text" name="user_wechat_name" value="{$info['user_wechat_name']}" /></td>
+			</tr> -->
+			<tr>
+				<td>修改商品描述：</td>
+				<td><textarea rows="6" class="form-control" name="des">{$info['des']}</textarea></td>
+			</tr>
+			<tr>
+				<td>修改商品价格：</td>
+				<td><input type="text" name="price" value="{$info['price']}" /></td>
+			</tr>
+			<tr>
+				<td>修改商品状态：</td>
+				<td>
+					<select name="state">
+						<option value="1" <if condition="$info['state'] eq 1"> checked </if>>新产品</option>
+						<option value="2" <if condition="$info['state'] eq 2"> checked </if>>在售</option>
+						<option value="3" <if condition="$info['state'] eq 3"> checked </if>>下架</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="修改" class="input_button"/>
+					<input type="reset" class="input_button"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

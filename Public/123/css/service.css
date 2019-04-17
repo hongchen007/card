@@ -1,0 +1,38 @@
+ul,li{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+#main{
+
+}
+.virtuals{
+    /*宽度，高度，左上边框*/
+    width:94%;
+    text-align: center;
+    margin:0 auto;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-top:1px solid #ddd;
+    border-left:1px solid #ddd;
+}
+.virtuals li{
+    /*宽度，高度，左浮动，右下边框*/
+    width:25%;
+    /*height:360px;*/
+    padding:8px;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+.virtuals li img{
+    width:80px;
+}
+.virtuals a{
+    display:block;
+    text-align:center;
+}
+.virtuals b{
+    display:block;
+    width:80%;
+}

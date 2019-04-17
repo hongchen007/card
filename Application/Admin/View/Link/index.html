@@ -1,0 +1,57 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-浏览信用卡办理链接</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+
+<form method="get" action="{:U('Link/index')}">
+	<div style="margin-top:20px">
+		<input type="text" value="{$Think.get.bank_name}" name="bank_name" placeholder="搜索链接名称" >
+		<input type="submit" value="查询">
+	</div>
+</form>
+   
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="20">信用卡办理链接列表</td>
+		</tr>
+		<tr class="tableTop">
+			<th class="tdLittle1">银行名称</th>
+			<th>链接地址</th>
+			<th>链接图片</th>		
+			<th>添加时间</th>		
+			<th>操作</th>
+		</tr>
+		
+		<foreach name="info" item="val">
+		<tr>
+			<td>{$val['bank_name']}</td>
+			<td>{$val['src']}</td>
+			<td><img src="__PUBLIC__/Uploads/{$val['pic']}" style="height:100px;"></td>
+			<td>{$val['addtime']}</td>
+			<td>
+	            <a href="__MODULE__/link/edit/id/{$val.id}">修改</a>|
+	            <a href="__MODULE__/link/del/id/{$val.id}">删除</a>
+		    </td>
+		</tr>
+		</foreach>
+		<tr class="content">
+                <td colspan="3" bgcolor="#FFFFFF"><div class="pages">
+                        {$page}
+                </div></td>  
+        </tr>
+	</table>
+
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

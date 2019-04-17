@@ -1,0 +1,116 @@
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#C2C2C2;
+}
+body,html{
+    background-color: #F7F7F7;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+}
+/*******banner******/
+#banner img{
+    width:100% ;
+    height:100%;
+}
+#main,#banner,body{
+    background-color: #FFF4A5;
+}
+h4{
+    padding-bottom:0.88rem;
+    padding-left:1.55rem;
+}
+#main_top .main_top_text{
+    font-size: 1.29rem;
+    color: #ED752B;
+    line-height: 2.52rem;
+}
+.vip{
+    height:3rem;
+    line-height:3rem;
+    width:12rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.04rem;
+}
+.vip li{
+    font-size: 1.12rem;
+    display: block;
+    float:left;
+
+    text-align: center;
+    outline: none;
+}
+#vip1{
+    background-color: #EB6D21;
+    border-radius:1.5rem 0 0 1.5rem ;
+    width:5.60rem;
+    height:100%;
+    color:#fff;
+}
+#vip2{
+    background-color: #fff;
+    border-radius: 0  1.5rem 1.5rem 0  ;
+    width:5.60rem;
+    height:100%;
+    color:#EB6D20
+}
+
+
+.form{
+    width:100%;
+    text-align: center;
+    margin: 0 3% 0.42rem;
+}
+.form input{
+    outline: none;
+    display: inherit;
+    height:2.88rem;
+    width:90%;
+    margin-top: 0.6rem ;
+    border: 1px solid #EB6D20;
+    border-radius: 1.8rem;
+    padding-left: 3%;
+    font-size: 1.26rem;
+}
+#main_box{
+    width:100%;
+    /*height: 1.93rem;*/
+    /*line-height: 1.93rem;*/
+}
+
+.footer .money{
+    font-size: 1.3rem;
+    color:#E96E20;
+    padding-left: 1.23rem;
+}
+.footer .money span{
+    font-weight: bolder;
+}
+.footer .buy{
+    font-size: 1.3rem;
+    color:#fff;
+    width:30%;
+    background-color: #EB6D21;
+    text-decoration: none;
+    text-align: center;
+}
+.footer{
+    height:4rem;
+    line-height:4rem;
+    display:flex;
+    justify-content: space-between;
+    background-color:#fff;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+#main_top,.vip,.form{
+    padding-left:0.5rem;
+}

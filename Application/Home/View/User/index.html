@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="__PUBLIC__/123/font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC__/123/css/me.css" rel="stylesheet">
+    <script src="__PUBLIC__/123/js/jquery-3.1.0.js"></script>
+    <title>个人中心</title>
+</head>
+<body>
+<div class="banner">
+    <img src="{$userinfo['weixin_headimgurl']}">
+    <h3>名称:{$userinfo.weixin_name}</h3>
+    <span class="Id">会员ID:{$userinfo['id']}　关注时间：{$userinfo.weixin_addtime}</span>
+    <ul>
+        <li>
+            <if condition="empty($wait) eq true">0.00元
+            <else />{$wait}元
+            </if>
+        <br>待审核金额</li>
+        <li>已提金额<br>
+            <if condition="empty($tixian) eq true">0.00元
+            <else />{$tixian}元
+            </if>
+        </li>
+        <li>我的余额<br>
+            <if condition="empty($userinfo['money']) eq true">0.00元
+            <else />{$userinfo['money']}元
+            </if>
+        </li>
+        <li><a href="{:U('User/tixian',array('id'=>$userinfo['id']))}"><img src="__PUBLIC__/123/images/li_03.jpg"><br>提现</a></li>
+    </ul>
+</div>
+<div class="conent">
+    <ul class="clearfix">
+        <li><a href="__MODULE__/User/person/openid/{$userinfo.openid}"><img src="__PUBLIC__/123/images/li2_03.jpg"><br>个人中心</a></li>
+        <li><a href="__MODULE__/User/mytream/openid/{$userinfo.openid}"><img src="__PUBLIC__/123/images/li2_05.jpg"><br>我的团队</a></li>
+        <li><a href="__MODULE__/User/mymsg/openid/{$userinfo.openid}"><img src="__PUBLIC__/123/images/li2_07.jpg"><br>我的信息</a></li>
+        <li><a href="__MODULE__/User/mypurse/openid/{$userinfo.openid}.html"><img src="__PUBLIC__/123/images/li2_12.jpg"><br>我的钱包</a></li>
+        <li><a href="__MODULE__/User/mymsg/openid/{$userinfo.openid}"><img src="__PUBLIC__/123/images/li2_13.jpg"><br>我要进步</a></li>
+        <li><a href="__MODULE__/Card/pushknow/openid"><img src="__PUBLIC__/123/images/li2_14.jpg"><br>推广须知</a></li>
+        <li><a href="__MODULE__/User/hero"><img src="__PUBLIC__/123/images/li2_18.jpg"><br>我的榜样</a></li>
+        <li><a href="__MODULE__/User/cooparate"><img src="__PUBLIC__/123/images/li2_19.jpg"><br>合作共赢</a></li>
+        <li><a href="__MODULE__/User/resetcode/id/{$userinfo.id}"><img src="__PUBLIC__/123/images/li2_20.jpg"><br>重置二维码</a></li>
+    </ul>
+    <div class="bot"></div>
+</div>
+
+<!-- <ul class="footer">
+    <li><a href="login.html"><img src="__PUBLIC__/123/images/li_33.jpg"><br><br>加入会员</a></li>
+    <li><a href="QR.html"><img src="__PUBLIC__/123/images/li_42.jpg"><br><br>新手帮助</a></li>
+    <li><a href="updata.html"><img src="__PUBLIC__/123/images/li_39.jpg"><br><br>我要推广</a></li>
+    <li><a href="me.html"><img src="__PUBLIC__/123/images/li_36.jpg"><br><br>个人中心</a></li>
+</ul> -->
+</body>
+</html>
+
+<script>
+    var _width = document.documentElement.clientWidth || document.body.clientWidth;
+    document.documentElement.style.fontSize = _width /627* 100 + "px";
+    window.onresize = function () {
+        var _width = document.documentElement.clientWidth || document.body.clientWidth;
+        document.documentElement.style.fontSize = _width /627* 100 + "px";
+    }
+
+</script>

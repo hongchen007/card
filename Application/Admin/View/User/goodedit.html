@@ -1,0 +1,41 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-修改优秀案例</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+    
+<body>
+	<form action="{:U('User/gooddoedit')}" method="post" enctype="multipart/form-data" >
+		<table class="table">
+			<tr >
+				<td class="th" colspan="2">修改优秀案例</td>
+			</tr>
+			<tr>
+				<td>标题</td>
+				<td><input type="text" name="title" value="{$info.title}"></td>
+				<input type="hidden"  value="{$info.id}" name="id" >
+			</tr>
+			<tr>
+				<td>内容</td>
+				<td><textarea rows="6" class="form-control" name="content">{$info['content']}</textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="修改" class="input_button"/>
+					<input type="reset" class="input_button"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0
+}
+/*页面的主体部分*/
+#main{
+
+}
+#main_first{
+    padding-left:5px;
+}
+#main_first h3:last-child img{
+    vertical-align: middle;
+    margin-bottom:5px;
+}
+h2{
+    padding:5px;
+}
+.main_flex{
+    display:flex;
+    width:80%;
+    margin:0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_flex>a{
+    width:80%;
+    color:#e4393c;
+}
+.main_flex p{
+    vertical-align: middle;
+    font-size: 12px;
+    width:26px;
+}
+.list{
+    width:90%;
+    margin: 10px 8px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list p{
+    font-size: 12px;
+    width:26px;
+    /*padding-left:5px;*/
+}
+.list_card{
+    width:90%;
+}
+p>a{
+    text-decoration: none;
+    font-size: small;
+    color:#e4393c;
+}
+ul{
+    list-style:none;
+    overflow:hidden;
+}
+.card_name{
+    border:1px solid #6598C6;
+    border-radius:15px;
+    box-shadow:0 0 2px 1px #79A6DE;
+}
+.card_border{
+    margin-left:2px;
+}
+.card_border>div.buju{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+div.buju{
+    display:flex;
+    justify-content:flex-start;
+}
+.buju_flex{
+    display:flex;
+    flex-direction: column;
+
+}
+.safe{
+    margin-left:5px;
+    text-decoration:none;
+    color:#aaa;
+}
+.list_li{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap: nowrap;
+}
+.list_li li{
+    padding:2px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.identity_card{
+
+    background:yellow;
+    border-radius:5px;
+}
+.age_card{
+
+    background:pink;
+    border-radius:8px;
+}
+.rate_card{
+    background:green;
+    border-radius:8px;
+}
+
+.card_border>span{
+    display: block;
+    font-size: 11px;
+}
+.card_name div.line{
+    margin-left: 20px;
+    width: 90%;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    border: 1px dashed #333;
+}
+.main-pic{
+    width:90%;
+    padding:20px;
+}

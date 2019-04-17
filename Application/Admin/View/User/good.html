@@ -1,0 +1,56 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-浏览优秀案例</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+    
+<body>
+	<form action="{:U('User/goodinsert')}" method="post" enctype="multipart/form-data" >
+		<table class="table">
+			<tr >
+				<td class="th" colspan="2">
+					浏览优秀案例
+					<if condition="empty($info) eq true"><span style="margin-left:80%;"><a href="{:U('User/goodadd')}">添加优秀案例</span></if>
+				</td>
+			</tr>
+			<if condition="empty($info) eq true">
+			<else />
+				<tr>
+					<td>标题</td>
+					<td>{$info['title']}</td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td><textarea rows="6" class="form-control" name="content">{$info['content']}</textarea></td>
+				</tr>
+				<tr>
+					<td>添加时间</td>
+					<td>{$info['addtime']}</td>
+				</tr>
+
+				<tr>
+					<td>操作</td>
+					<td>
+			            <a href="__MODULE__/User/goodedit/id/{$info.id}">修改</a>|
+			            <a href="__MODULE__/User/gooddel/id/{$info.id}">删除</a>
+					</td>
+				</tr>
+			</if>
+		</table>
+	</form>
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>
+
+
+
+

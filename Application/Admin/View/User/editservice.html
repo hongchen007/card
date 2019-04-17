@@ -1,0 +1,37 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-修改客服微信信息</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+    
+<body>
+	<form action="{:U('User/doeditser')}" method="post" enctype="multipart/form-data" >
+		<table class="table">
+			<tr >
+				<td class="th" colspan="2" >修改客服微信信息</td>
+			</tr>
+			<tr>
+				<td>修改微信</td>
+				<td><input type="text" name="weixin" value="{$info['weixin']}" /></td>
+				<input class=" form-control" id="id" name="id" type="hidden" value="{$info.id}" /> 
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="修改" class="input_button"/>
+					<input type="reset" class="input_button"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>

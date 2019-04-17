@@ -1,0 +1,113 @@
+body,html{
+    margin:0;
+    padding:0;
+}
+/*主题部分*/
+#main{
+    padding-top:0px;
+   /* padding-left:10px;*/
+    
+}
+table{
+    border-collapse:collapse;
+    border:1px #000 solid;
+    width:94%;
+    margin:0 auto;
+    margin-top:0px;
+}
+table>thead{
+    background:#fff;
+}
+th,td{
+    border:1px solid #525152;
+    text-align:center;
+    font-size:12px;
+    line-height:30px;
+    background:#fff;}
+/*模拟对角线*/
+/*.out{*/
+    /*border-top:10em #D6D3D6 solid;!*上边框宽度等于表格第一行行高*!*/
+    /*border-left:345px #10A3DB solid;!*左边框宽度等于表格第一行第一格宽度*!*/
+    /*position:relative;!*让里面的两个子容器绝对定位*!*/
+/*}*/
+/*b{*/
+    /*font-style:normal;*/
+    /*!*display:block;*!*/
+    /*position:absolute;*/
+    /*top:-23em;*/
+    /*left:-75px;*/
+    /*width:100%;*/
+/*}*/
+/*em{font-style:normal;*/
+    /*display:block;*/
+    /*position:absolute;*/
+    /*top:-40px;*/
+    /*left:-90px;*/
+    /*width:100%;*/
+    /*}*/
+/*tr.first-tr th{*/
+    /*font-size:30px;*/
+    /*text-align: center;*/
+    /*padding:10px;*/
+/*}*/
+.pic_text b{
+    color:red;
+}
+.pic_text td:first-child{
+    
+}
+.pic_text img{
+    width:50px;
+    text-align: center;
+
+}
+#tab1>tbody>th{
+    width:33.333333%;
+}
+#list-slash th{
+    background: #10A3DB;
+}
+#tab1>tbody td.last-child{
+    padding:20px 50px;
+}
+#code_detail{
+    text-align: center;
+}
+#code_detail p{
+    color:#e4393c;
+    margin-top:10px;
+}
+#code_detail i{
+    border:10px solid #e4393c;
+    width:10px;
+    /*height:10px;*/
+    border-top:10px solid transparent;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    display:block;
+    position:relative;
+    left:50%;
+}
+#tab2>tbody>tr.first-list td{
+    background:#10A3DB;
+    width:25%;
+    height:50px;
+}
+.list-same td img{
+    width:30px;
+}
+.list-same td{
+    padding:5px 10px;
+    background:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<html>
+ <head> 
+ </head>
+ <body>
+  <block name="title">
+   <title>后台-浏览客服</title>
+  </block>   
+  <extend name="Public:base" /> 
+  <block name="main"> 
+<!--   
+<form method="get" action="{:U('User/index')}">
+	<div style="margin-top:20px">
+		<input type="text" value="{$Think.get.id}" name="id" placeholder="搜索用户ID" >
+		<input type="text" value="{$Think.get.name}" name="name" placeholder="搜索用户名" >
+		状态：
+			<select class="form-control m-bot15" name="state" >
+                  <option value="">--请选择--</option>
+                  <option value="1">正常用户</option>
+                  <option value="2">禁用用户</option>
+            </select>
+		<input type="submit" value="查询">
+	</div>
+
+</form> -->
+
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="20">客服列表</td>
+		</tr>
+		<tr class="tableTop">
+			<th>客服ID</th>
+			<th>客服微信</th>
+			<th>操作</th>
+		</tr>
+		
+		<foreach name="info" item="val">
+		<tr>
+			<td>{$val['id']}</td>
+			<td>{$val['weixin']}</td>
+			<td>
+	            <a href="__MODULE__/User/delservice/id/{$val.id}">删除</a> |
+	            <a href="__MODULE__/User/editservice/id/{$val.id}">修改</a>
+		    </td>
+		</tr>
+		</foreach>
+		<tr class="content">
+                <!--<td colspan="3" bgcolor="#FFFFFF">&nbsp;{$page}</td>-->
+                <td colspan="3" bgcolor="#FFFFFF"><div class="pages">
+                        {$page}
+                </div></td>  
+            </tr>
+	</table>
+
+</body>
+
+
+
+
+  </block>
+ </body>
+</html>
